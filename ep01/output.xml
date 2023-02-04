@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20230204 18:10:39.168" rpa="false" schemaversion="3">
+<suite id="s1" name="First Robot" source="C:\Users\Panupat\Desktop\ep01_material\ep01\first_robot.robot">
+<test id="s1-t1" name="EX00 Input username and password using id" line="21">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx00}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:10:39.437" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex00.html'.</msg>
+<status status="PASS" starttime="20230204 18:10:39.437" endtime="20230204 18:10:41.538"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=username-box</arg>
+<arg>Input username using id</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:41.540" level="INFO">Typing text 'Input username using id' into text field 'id=username-box'.</msg>
+<status status="PASS" starttime="20230204 18:10:41.539" endtime="20230204 18:10:41.704"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password-box</arg>
+<arg>Input password using id</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:41.706" level="INFO">Typing text 'Input password using id' into text field 'id=password-box'.</msg>
+<status status="PASS" starttime="20230204 18:10:41.706" endtime="20230204 18:10:41.821"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:10:41.822" endtime="20230204 18:10:43.988"/>
+</kw>
+<status status="PASS" starttime="20230204 18:10:39.436" endtime="20230204 18:10:43.988"/>
+</test>
+<test id="s1-t2" name="EX01 Input username and password using xpath" line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx01}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:10:43.991" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex01.html'.</msg>
+<status status="PASS" starttime="20230204 18:10:43.990" endtime="20230204 18:10:46.012"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@v='user']</arg>
+<arg>Input username using xpath</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:46.019" level="INFO">Typing text 'Input username using xpath' into text field 'xpath=//input[@v='user']'.</msg>
+<status status="PASS" starttime="20230204 18:10:46.018" endtime="20230204 18:10:46.199"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@v='password']</arg>
+<arg>Input password using xpath</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:46.200" level="INFO">Typing text 'Input password using xpath' into text field 'xpath=//input[@v='password']'.</msg>
+<status status="PASS" starttime="20230204 18:10:46.200" endtime="20230204 18:10:46.316"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:10:46.316" endtime="20230204 18:10:48.445"/>
+</kw>
+<status status="PASS" starttime="20230204 18:10:43.989" endtime="20230204 18:10:48.445"/>
+</test>
+<test id="s1-t3" name="EX02 Input username and password using parent to make unique" line="32">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx02}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:10:48.448" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex02.html'.</msg>
+<status status="PASS" starttime="20230204 18:10:48.447" endtime="20230204 18:10:50.501"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@v='username']/input</arg>
+<arg>Input username using parent to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:50.502" level="INFO">Typing text 'Input username using parent to make unique' into text field 'xpath=//div[@v='username']/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:50.501" endtime="20230204 18:10:50.847"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@v='password']/input</arg>
+<arg>Input password using parent to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:50.848" level="INFO">Typing text 'Input password using parent to make unique' into text field 'xpath=//div[@v='password']/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:50.847" endtime="20230204 18:10:51.002"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:10:51.002" endtime="20230204 18:10:53.171"/>
+</kw>
+<status status="PASS" starttime="20230204 18:10:48.446" endtime="20230204 18:10:53.171"/>
+</test>
+<test id="s1-t4" name="EX03 Input username and password using contains" line="37">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx03}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:10:53.173" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex03.html'.</msg>
+<status status="PASS" starttime="20230204 18:10:53.173" endtime="20230204 18:10:55.204"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[contains(@v,'username')]/input</arg>
+<arg>Input username using contains</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:55.205" level="INFO">Typing text 'Input username using contains' into text field 'xpath=//div[contains(@v,'username')]/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:55.204" endtime="20230204 18:10:55.394"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[contains(@v,'password')]/input</arg>
+<arg>Input password using contains</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:55.395" level="INFO">Typing text 'Input password using contains' into text field 'xpath=//div[contains(@v,'password')]/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:55.394" endtime="20230204 18:10:55.537"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:10:55.538" endtime="20230204 18:10:57.691"/>
+</kw>
+<status status="PASS" starttime="20230204 18:10:53.172" endtime="20230204 18:10:57.691"/>
+</test>
+<test id="s1-t5" name="EX04 Input username and password using child to make unique" line="42">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx04}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:10:57.693" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex04.html'.</msg>
+<status status="PASS" starttime="20230204 18:10:57.692" endtime="20230204 18:10:59.755"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[span[@c='Username']]/input</arg>
+<arg>Input username using child to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:59.756" level="INFO">Typing text 'Input username using child to make unique' into text field 'xpath=//div[span[@c='Username']]/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:59.756" endtime="20230204 18:10:59.911"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[span[@c='Password']]/input</arg>
+<arg>Input password using child to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:10:59.912" level="INFO">Typing text 'Input password using child to make unique' into text field 'xpath=//div[span[@c='Password']]/input'.</msg>
+<status status="PASS" starttime="20230204 18:10:59.911" endtime="20230204 18:11:00.083"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:11:00.083" endtime="20230204 18:11:02.244"/>
+</kw>
+<status status="PASS" starttime="20230204 18:10:57.692" endtime="20230204 18:11:02.244"/>
+</test>
+<test id="s1-t6" name="EX05 Input username and password using text between tag to make unique" line="47">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx05}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:11:02.247" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex05.html'.</msg>
+<status status="PASS" starttime="20230204 18:11:02.246" endtime="20230204 18:11:04.224"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[span[text()='User:']]/input</arg>
+<arg>Input username using text between tag to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:11:04.226" level="INFO">Typing text 'Input username using text between tag to make unique' into text field 'xpath=//div[span[text()='User:']]/input'.</msg>
+<status status="PASS" starttime="20230204 18:11:04.224" endtime="20230204 18:11:04.426"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[span[text()='Pass:']]/input</arg>
+<arg>Input password using text between tag to make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:11:04.427" level="INFO">Typing text 'Input password using text between tag to make unique' into text field 'xpath=//div[span[text()='Pass:']]/input'.</msg>
+<status status="PASS" starttime="20230204 18:11:04.427" endtime="20230204 18:11:04.588"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:11:04.588" endtime="20230204 18:11:06.725"/>
+</kw>
+<status status="PASS" starttime="20230204 18:11:02.246" endtime="20230204 18:11:06.726"/>
+</test>
+<test id="s1-t7" name="EX06 Input username and password using and to help make unique" line="52">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlEx06}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230204 18:11:06.728" level="INFO">Opening browser 'chrome' to base url 'file:///C:/Users/Panupat/Desktop/ep01_material/ep01/ex06.html'.</msg>
+<status status="PASS" starttime="20230204 18:11:06.728" endtime="20230204 18:11:08.675"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@k='abc' and @p='xyz']/input</arg>
+<arg>Input User using and to help make unique</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:11:08.676" level="INFO">Typing text 'Input User using and to help make unique' into text field 'xpath=//div[@k='abc' and @p='xyz']/input'.</msg>
+<status status="PASS" starttime="20230204 18:11:08.675" endtime="20230204 18:11:08.856"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@k='abc'][2]/input</arg>
+<arg>Input Password using descendant::para[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:11:08.856" level="INFO">Typing text 'Input Password using descendant::para[1]' into text field 'xpath=//div[@k='abc'][2]/input'.</msg>
+<status status="PASS" starttime="20230204 18:11:08.856" endtime="20230204 18:11:09.069"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//div[@p='xyz'][2]/input</arg>
+<arg>Input Nickname using descendant::para[1]</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230204 18:11:09.070" level="INFO">Typing text 'Input Nickname using descendant::para[1]' into text field 'xpath=//div[@p='xyz'][2]/input'.</msg>
+<status status="PASS" starttime="20230204 18:11:09.069" endtime="20230204 18:11:09.220"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230204 18:11:09.220" endtime="20230204 18:11:11.432"/>
+</kw>
+<status status="PASS" starttime="20230204 18:11:06.727" endtime="20230204 18:11:11.432"/>
+</test>
+<doc>Learn how to use robot and selenium.</doc>
+<status status="PASS" starttime="20230204 18:10:39.169" endtime="20230204 18:11:11.434"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="First Robot">First Robot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
