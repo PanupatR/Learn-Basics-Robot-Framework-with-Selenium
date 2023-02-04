@@ -54,4 +54,14 @@ EX06 Input username and password using and to help make unique
 	Input Text        xpath=//div[@k='abc' and @p='xyz']/input            Input User using and to help make unique
 	Input Text        xpath=//div[@k='abc'][2]/input                      Input Password using descendant::para[1]
 	Input Text        xpath=//div[@p='xyz'][2]/input                      Input Nickname using descendant::para[1]
+	Close Browser 
+EP01 Small Excercise
+	Open Browser      ${urlEp01}        ${browser}
+    Input Text        id=username-box        username1
+	Input Text        xpath=//div[@v='password']/input        passwordUsername1
+	Input Text        xpath=//div/input[@doppio='nickname']        User1
+	Select From List By Label        id=company        Doppio
+	Click Element        id=op1
+	Click Button         id=use-me
+	Sleep        3s
 	Close Browser
